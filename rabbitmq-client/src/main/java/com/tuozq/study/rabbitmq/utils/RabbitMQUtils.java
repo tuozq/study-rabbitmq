@@ -14,9 +14,9 @@ public class RabbitMQUtils {
      */
     public static Connection getConnection(){
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setUsername("rabbit");
-        factory.setPassword("rabbit");
-        factory.setHost("192.168.13.129");
+        factory.setUsername("user");
+        factory.setPassword("password");
+        factory.setHost("192.168.71.128");
         factory.setPort(5672);
         factory.setVirtualHost("/");
         try {
