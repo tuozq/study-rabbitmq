@@ -1,0 +1,19 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: rabbitmaq-server-boot
+  # rabbitmq配置
+  rabbitmq:
+    host: 192.168.71.128
+    port: 5672
+    username: user
+    password: password
+    virtual-host: /
+    listener:
+      simple:
+        # 开启手动确认
+        acknowledge-mode: manual
+        # 预处理模式更改为每次读取1条消息,在消费者未回执确认之前,不在进行下一条消息的投送
+        # prefetch: 1
+
