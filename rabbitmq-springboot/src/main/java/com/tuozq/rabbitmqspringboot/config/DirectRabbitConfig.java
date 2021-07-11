@@ -13,7 +13,7 @@ public class DirectRabbitConfig {
     public static final String DIRECT_QUEUE1 = "directQueue1";
 
     /**
-     * 定义一个队列
+     * 定义一个队列1
      * @return
      */
     @Bean
